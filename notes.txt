@@ -1,0 +1,31 @@
+    //        start..matched
+    //                [{95,37,53}] - base/first - 0
+    //                [{50,20,45}] - top/last - 1
+    //                [{50,20,45}] - base/first - 0
+    //                [{45,12,23}] - top/last - 1
+    //        end..matched
+    //
+    //                [{95,37,53}] - base/first
+    //                [{50,20,45}] -
+    //                [{45,12,23}] - top/last
+    //        merge1(cuboidStacks, visitedStacks, mergedStacks);
+
+    // for debugging Processing.. [{50,45,20}]
+
+
+//          System.out.println("start..matched");
+//          head.ongoingStack.forEach(this::logPoint);
+//          y.ongoingStack.forEach(this::logPoint);
+//          System.out.println("end..matched");
+
+
+
+//          if (mergedStack.ongoingStack.size() > head.ongoingStack.size() && mergedStack.ongoingStack.size() > y.ongoingStack.size()) {
+//            tQueue.add(mergedStack);
+//          }
+
+          if (mergedStack.ongoingStack.size() > 1) {
+            tQueue.add(mergedStack);
+          }
+
+//          tQueue.add(mergedStack);
